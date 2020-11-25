@@ -1,0 +1,168 @@
+
+html {
+	scroll-behavior: smooth;
+	font-size: 100%;
+  font-family: 'Alata', sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+/* Navigation
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+nav {
+  display: grid;
+  grid-template-columns: repeat(6,1fr);
+  grid-template-rows: 6em;
+  overflow: hidden;
+  background-color: #FFBB00;
+}
+
+.nav #contents {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+}
+
+#contents:hover {
+  background-color: #F97B1A;
+}
+
+.navcon {
+    display: inline-grid;
+    grid-template-columns: repeat(3,1fr);
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+.navcon a {
+    text-decoration: none;
+    color: white;
+}
+
+.navcon a:hover {
+    color: #F97B1A;
+}
+
+.logo-container img {
+    position: relative;
+    width: auto;
+    max-height: 80px;
+    padding: 7px 30px 15px;
+    border-radius: 50%;
+} 
+
+.logo-container a {
+    text-decoration:none;
+    color: white;
+}
+
+
+
+.images {
+    object-fit: cover;
+    height: 700px;
+}
+
+#slider {
+    overflow: hidden;
+}
+#slider figure {
+    position: relative;
+    width: 500%;
+    margin: 0;
+    left: 0;
+    animation: 25s slider infinite;
+}
+#slider figure img {
+    width: 20%;
+    float: left;
+}
+@keyframes slider {
+    0% {
+        left: 0%;
+    }
+    20% {
+        left: 0%;
+    }
+    25% {
+        left: -100%;
+    }
+    45% {
+        left: -100%;
+    }
+    50% {
+        left: -200%;
+    }
+    70% {
+        left: -200%;
+    }
+    75% {
+        left: -300%;
+    }
+    95% {
+        left: -300%;
+    }
+    100% {
+        left: -400%;
+    }
+}
+
+
+#description {
+    margin: 5% 15% 5%;
+    text-align: center;
+}
+
+#cards {
+    display: grid;
+    height: 600px;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 1fr;
+    margin: 5% 5%;
+    background-color: none;
+
+}
+
+#cards div {
+    margin: 0 10px 0;
+    border: 10px solid #FFBB00;
+    border-radius: 1%;
+    background-color: #FFBB00;
+    object-fit: cover;
+}
+
+#donation-bar ul {
+    display: grid;
+    margin: 50px 10px;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 1fr;
+    list-style: none;
+    text-align: center;
+}
+
+#donation-bar li {
+    text-align: center;
+    margin: 25px 10px 25px;
+}
+
+.donation {
+    display: grid;
+}
+
+.projects {
+    display: flex;
+    background-color: red;
+}
+
+footer {
+    background-color: #3e4749;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(2,1fr);
+}
