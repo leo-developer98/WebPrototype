@@ -68,7 +68,7 @@ a {
     display: block;
   }
   #checkout_cart {
-    display: block;
+    display: none;
   }
 }
 
