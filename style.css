@@ -27,7 +27,7 @@ a {
     height: relative;
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(6,1fr);
+    grid-template-columns: 30% repeat(4,1fr);
     grid-template-rows: 6em;
     overflow: hidden;
     background-color: #FFBB00;
@@ -50,7 +50,7 @@ a {
 
 .navcon {
     display: grid;
-    margin-left: 40px;
+    margin: 0 5%;
     grid-template-columns: repeat(3,1fr);
     padding-top: 30px;
     padding-bottom: 40px;
@@ -61,6 +61,7 @@ a {
 .navcon a {
     display: flex;
     float: center;
+    margin: 0;
     text-decoration: none;
     color: white;
 }
