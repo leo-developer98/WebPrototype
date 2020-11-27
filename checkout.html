@@ -39,7 +39,8 @@
             </div>
         </nav>
 
-        <section id="checkout">
+        <section id="checkout" class="page">
+            <div id="heading">Check - Out</div>
             <div id="donation-bar">
                 <ul>
                     <li>Choose Project</li>
@@ -47,88 +48,90 @@
                     <li class="active">Checkout</li>
                 </ul>                
             </div>
-
-            <div class="checkout-left">
-              <div class="form">
-                  <input type="radio" class="radio" name="p_methods">
-                  <div>
-                      <h3>Credit/Debit Card Payment</h3>
-                      <div class="card">
-                          <label class="label">Card Number:</label>
-                          <br />
-                          <input type="text" class="input" name="card_number" maxlength="16" placeholder="0000 0000 0000 0000">
-                      </div>
-                      <div class="card">
-                          <label class="label">Card holder:</label>
-                          <br />
-                          <input type="text" class="input" name="card_holder" placeholder="Care Australia">
-                      </div>
-                      <div class="card">
-                          <div class="card_item">
-                              <label class="label">Expiry Date:</label>
-                              <br />
-                              <input type="text" class="input" name="expiry_date" maxlength="4" placeholder="MM / YY">
-                          </div>
-                          <div class="card_item">
-                              <label class="label">CVC:</label>
-                              <br />
-                              <input type="text" class="input" name="cvc" maxlength="4" placeholder="0000">
-                          </div>
-                      </div>
-                  </div>                    
-              </div>
-
-              <div class="form">
-                  <input type="radio" class="radio" name="p_methods">
-                  <h3>My Monthly Donation Credits</h3>
-                  
-                  <hr />
-                  <hr />
-                  <hr />
-              </div>
-
-              <div class="form">
-                  <input type="radio" class="radio" name="p_methods">
-                  <h3>PayPal</h3>
-                  <hr />
-                  <hr />
-                  <hr />
-              </div>
-            </div>
-
-            <div id="cart">
-                <div>
-                    <h3>My Cart List</h3>    
-                </div>
-                <div>
-
-                    <img src="images/icons/mask.png" alt="Mask Icon">
-                    <p>Covid19 Emergency Support</p>                            
-
-
-                    <img src="images/icons/food.png" alt="Food Icon">
-                    <p>World Hunger Support</p>                            
-
-                </div>
-                <div>
-                    <h3>Details:</h3>
-                    <ul>
-                        <li>Covid19 Emergency Support X 2</li>
-                        <li>World Hunger Support X 3</li>
-                    </ul>
-                </div>
-                <div>
-                    <h3>Total Amount:</h3>
-                    <p>00 AUD</p>
-                </div>
-                <div>
-                    <a href="checkout.html" class="button">
+            <div id="checkout_all">
+                <div id="checkout_left">
+                    <div class="form">
+                        <input type="radio" class="radio" name="p_methods">
                         <div>
-                            <p>Proceed</p>
-                        </div>                            
-                    </a>                        
+                            <h2>Credit/Debit Card Payment</h2>
+                            <div class="p_card">
+                                <label class="label">Card Number:</label>
+                                <br />
+                                <input type="text" class="input" name="card_number" maxlength="16" placeholder="0000 0000 0000 0000">
+                            </div>
+                            <div class="p_card">
+                                <label class="label">Card holder:</label>
+                                <br />
+                                <input type="text" class="input" name="card_holder" placeholder="Care Australia">
+                            </div>
+                            <div class="p_card">
+                                <div class="card_item">
+                                    <label class="label">Expiry Date:</label>
+                                    <br />
+                                    <input type="text" class="input" name="expiry_date" maxlength="4" placeholder="MM / YY">
+                                </div>
+                                <div class="card_item">
+                                    <label class="label">CVC:</label>
+                                    <br />
+                                    <input type="text" class="input" name="cvc" maxlength="4" placeholder="0000">
+                                </div>
+                            </div>
+                        </div>                    
+                    </div>
+
+                    <div class="form">
+                        <input type="radio" class="radio" name="p_methods">
+                        <h2>My Monthly Donation Credits</h2>
+                        
+                        <hr />
+                        <hr />
+                        <hr />
+                    </div>
+
+                    <div class="form">
+                        <input type="radio" class="radio" name="p_methods">
+                        <h2>PayPal</h2>
+                        <hr />
+                        <hr />
+                        <hr />
+                    </div>
+                </div>
+
+                <div class="cart" id="checkout_cart">
+                    <div>
+                        <h3>My Cart List</h3>
+                    </div>
+                    <div>
+
+                        <img src="images/icons/mask.png" alt="Mask Icon">
+                        <p>Covid19 Emergency Support</p>                            
+
+
+                        <img src="images/icons/food.png" alt="Food Icon">
+                        <p>World Hunger Support</p>                            
+
+                    </div>
+                    <div>
+                        <h3>Details:</h3>
+                        <ul>
+                            <li>Covid19 Emergency Support X 2</li>
+                            <li>World Hunger Support X 3</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3>Total Amount:</h3>
+                        <p>00 AUD</p>
+                    </div>
+                    <div>
+                        <a href="checkout_done.html" class="button">
+                            <div>
+                                <p>Proceed</p>
+                            </div>                            
+                        </a>                        
+                    </div>
                 </div>
             </div>
+
         </section>
 
         <!--Image Section-->

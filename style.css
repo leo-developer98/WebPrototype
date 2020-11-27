@@ -14,6 +14,9 @@ h3 {
     font-weight: normal;
 }
 
+a {
+    color: #FFBB00;
+}
 
 /* Navigation
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -262,41 +265,75 @@ h3 {
     display: block;
     float: left;
     border-radius: 10px;
-    border: 5px solid #ff9354;
+    border: 5px solid #3e4749;
     margin-right: 10px;
 }
 
-#projects form {
+#projects .p_icons {
     display: grid;
     grid-template-columns: repeat(4,1fr);
     grid-template-rows: 1fr;
-    margin: 5% 5% 2.5%;
+    margin: 5%;
+}
+
+#projects .p_icons a {
+    margin: 5%;
+}
+
+#projects .p_icons img {
+    width: 100%;
 }
 
 #projects form input{
     width: 60%;
 }
 
-#point {
-    margin: 0 10% 0;
+.point {
     width: 0;
     height: 0;
     border-left: 10px solid transparent;
     border-right: 10px solid transparent;
+}
+
+#p1 {
+    margin-left: 15%;
     border-bottom: 10px solid #FFBB00;
-  }
+}
 
+#p2 {
+    margin-left: 37.5%;
+    border-bottom: 10px solid #ff9354;
+}
 
-#d_content {
+#p3 {
+    margin-left: 60%;
+    border-bottom: 10px solid #FFBB00;
+}
+
+#p4 {
+    margin-left: 82.5%;
+    border-bottom: 10px solid #ff9354;
+}
+
+.d_content {
     display: grid;
     margin: 0 5% 5%;
     grid-template-columns: 50% 50%;
     grid-template-rows: 1fr;
+}
+
+#d1, #d3 {
     border: 8px solid #FFBB00;
     border-radius: 8px;
 }
 
-#d_content img {
+#d2, #d4 {
+    border: 8px solid #ff9354;
+    border-radius: 8px;
+}
+
+
+.d_content img {
     object-fit: cover;
     float: left;
     overflow: hidden;
@@ -304,13 +341,26 @@ h3 {
     height: 500px;
 }
 
-
-#d_content div {
+.d_content > div {
     background-color: white;
     float: right;
+    align-items: center;
+    justify-content: center;
 }
-#d_content div h3,p {
-    margin: 20px;
+.d_content div h2 {
+    margin: 5%;
+    margin-bottom: 0;
+}
+
+.d_content div p {
+    margin: 2.5% 5%;
+}
+
+
+#add_cart {
+    margin: 5%;
+    display: flex;
+    float:bottom;
 }
 
 .cart {
@@ -335,23 +385,22 @@ h3 {
 }
 
 .cart > :nth-child(2) {
-    display: grid;
-    grid-template-columns: 30% 70%;
-    grid-template-rows: repeat(2,1fr);
+    display: block;
     margin: 5% 0;
     border-bottom: 5px solid #3E4749;
+    align-items: center;
+    justify-content: center;
 }
 
 .cart > :nth-child(2) img {
-    object-fit: cover;
     height: 30%;
-    margin: 10px;
+    margin-left: 35%;
 }
 
 .cart > :nth-child(2) p {
+    display: block;
     width: 100%;
     text-align: center;
-    float: center;
     margin: 10px;
 }
 
@@ -385,46 +434,60 @@ h3 {
 
 #checkout {
     margin: 5%;
+    margin-right: 0%;
     overflow: hidden;
 }
 
+#checkout_all {
+    display: grid;
+    grid-template-columns: 75% 25%;
+    grid-template-rows: 1fr;
+}
+
+
 .form {
+    width: auto;
     height: auto;
     background-color:  #FAFAFA;
     border: 5px solid #ff9354;
-    max-width: 500px;
-    margin-bottom: 20px;
+    margin-right: 10%;
+    margin-bottom: 5%;
+}
+
+.form:last-of-type {
+    margin-bottom: 0;
 }
 
 .radio {
-    margin: 20px;
+    margin: 30px;
     display: flex;
     float: left;
 }
 
-.form h3 {
-    margin: 15px;
-    margin-top: 12px;
+.form h2 {
+    font-weight: normal;
+    margin: 20px 10%;
+
 }
 
 .form hr {
     height: 4px;
     border: none;
     background: #879499;
-    margin: 3% 10%;
+    margin: 5% 10%;
 }
 
 .form > div {
-    display: inline-block;
+    display: block;
 }
 
-.card {
-    margin: 20px;
+.p_card {
+    margin: 10%;
 }
 
 .card_item {
     display: inline-block;
-    margin-right: 10px;
+    margin-right: 13px;
 }
 
 .input {
@@ -434,6 +497,28 @@ h3 {
     font-size: 90%;
 }
 
+#checkout_done a {
+    text-decoration: none;
+}
+
+#checkout_done > h2{
+    margin: 10%;
+    font-weight: normal;
+    text-align: center;
+}
+
+#checkout_done a h2{
+    margin: 5%;
+    font-weight: normal;
+    text-align: center;
+}
+
+#checkout_done a:hover {
+    text-decoration: underline;
+    color: #F97B1A
+}
+
+
 /* My Page
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
@@ -441,42 +526,55 @@ h3 {
     display: grid;
     grid-template-columns: repeat(2,1fr);
     grid-template-rows: 1fr;
+    margin: 3% 5%;
 }
 
 .user_details {
     border-right: 5px solid #3e4749;
     display: grid;
+    width: 100%;
+    height: 100%;
     grid-template-columns: 1fr;
-    grid-template-rows: 20% 10% 35% 35%;
+    grid-template-rows: auto;
     align-items: center;
     justify-content: center;
 }
 
 #profile {
     display: grid;
+    height: 100%;
     grid-template-columns: 40% 60%;
     grid-template-rows: 1fr;
+    align-items: center;
 }
 
 #profile img {
     background-color: #FFBB00;
     border-radius: 50%;
-    width: 75%;
+    width: 100%;
+}
+#user_box {
+    margin-left: 25%;
 }
 
-#profile #user_box ul p {
-    text-align: center;
+#user_box div {
+    display: block;
+    font-size: 1.5em;
 }
 
-#profile #user_box ul li {
-    text-align: left;
-    list-style: none;
+#profile #user_box p {
+    display: inline-block;
+}
+
+.user_details > div:nth-of-type(2) {
+    margin-top: 5%;
 }
 
 #monthly_credit {    
     display: flex;
     height: 20px;
     margin-right: 10%;
+    margin-top: 2%;
     border: 5px solid #ff9354;
     border-radius: 0 10px 10px 0;;
 }
@@ -490,14 +588,77 @@ h3 {
 .user_data {
     display: grid;
     grid-template-columns: 40% 60%;
-    grid-template-rows: auto;
+    grid-template-rows: 1fr;
+    margin-top: 5%;
+    align-items: center;
+    justify-content: center;
 }
 
 .user_data img {
-    height: 50%;
+    width: 50%;
 }
 
+.user_data div {
 
+}
+
+.notification {
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-row: repeat(5, 18%) 10%;
+}
+
+.n_bar {
+    margin: 2.5% 5%;
+    height: 70%;
+    display: grid;
+    grid-template-columns: 80% 20%;
+    grid-template-rows: 1fr;
+    border: 5px solid #ff9354;
+    border-radius: 8px;
+    background-color: lavenderblush;
+    justify-content: center;
+    align-items: center;
+}
+
+.n_bar p {
+    text-align: left;
+    margin: 0 5%;
+    color: #3e4749;
+}
+
+#checkbox {
+    display: flex;
+    float: center;
+    border: 5px solid #FFBB00;
+}
+
+.n_bar a i {
+    display: flex;
+    float: right;
+    margin-right: 20%;
+}
+
+.n_more {
+    display: flex;
+    height: 30px;
+    margin: 5%;
+    margin-bottom: 0%;
+    border: 5px solid #FFBB00;
+    border-radius: 50px;
+    background-color: blanchedalmond;
+    align-items: center;
+    justify-content: center;
+}
+
+.n_more > div {
+    display: block;
+    float: center;
+    border: 5px solid #324749;
+    border-radius: 50%;
+    background-color: #3e4749;
+    margin: 0 10px;
+}
 /* Footer
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 footer {
