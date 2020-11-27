@@ -63,7 +63,15 @@ a {
   #mypage p {
     font-size: 0.75em;
   }
+
+  #checkout_all {
+    display: block;
+  }
+  #checkout_cart {
+    display: block;
+  }
 }
+
 
 quote {
   display: block;
