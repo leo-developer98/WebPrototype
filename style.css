@@ -19,6 +19,21 @@ a {
     color: #FFBB00;
 }
 
+@media only screen and (max-width: 375px) {
+  .slider {
+    display: none;
+  }
+  
+  footer {
+    display: none;
+  }
+
+  .page {
+    margin: 2.5% 0 2.5% 2.5%;
+  }
+
+}
+
 quote {
   display: block;
   margin: 5% 0;
