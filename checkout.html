@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Care Australia</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="style.css"  type="text/css" />
+    <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inria+Serif:ital,wght@1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <script src="https://kit.fontawesome.com/c7000e5e13.js" crossorigin="anonymous"></script>
+  </head>
+
+  <body>
+    <main>
+        <!--Navigation Bar-->
+        <nav class="nav">
+            <div class="logo-container">
+                <a class="logo" href="index.html">
+                    <img src="images/logo.png" alt="logo">
+                </a> 
+            </div>
+            <div class="smedia">
+                <a href="https://www.facebook.com/CAREAustralia"><i class="fab fa-facebook-square fa-1x"></i></a>
+                <a href="https://www.instagram.com/careaustralia/?hl=en"><i class="fab fa-instagram fa-1x"></i></a>
+                <a href="https://twitter.com/careaustralia?lang=en"><i class="fab fa-twitter fa-1x"></i></a>
+            </div> 
+            <a id="contents" class="active" href="donate.html">Donate</a>
+            <a id="contents" href="getinvolved.html">Get Involved</a>
+            <a id="contents" href="aboutus.html">About Us</a>
+            <div class="navcon">
+                <a id="search"><i class="fas fa-search"></i></a>
+                <a id="notification" href="mypage.html"><i class="fas fa-bell"></i></a>
+                <a id="mypage" href="mypage.html"><i class="fas fa-user"></i></a>
+            </div>
+        </nav>
+
+        <section id="checkout">
+            <div id="donation-bar">
+                <ul>
+                    <li>Choose Project</li>
+                    <li>Set Amount</li>
+                    <li class="active">Checkout</li>
+                </ul>                
+            </div>
+            <div class="form">
+                <input type="radio" class="radio" name="p_methods">
+                <div>
+                    <h3>Credit/Debit Card Payment</h3>
+                    <div class="card">
+                        <label class="label">Card Number:</label>
+                        <br />
+                        <input type="text" class="input" name="card_number" maxlength="16" placeholder="0000 0000 0000 0000">
+                    </div>
+                    <div class="card">
+                        <label class="label">Card holder:</label>
+                        <br />
+                        <input type="text" class="input" name="card_holder" placeholder="Care Australia">
+                    </div>
+                    <div class="card">
+                        <div class="card_item">
+                            <label class="label">Expiry Date:</label>
+                            <br />
+                            <input type="text" class="input" name="expiry_date" maxlength="4" placeholder="MM / YY">
+                        </div>
+                        <div class="card_item">
+                            <label class="label">CVC:</label>
+                            <br />
+                            <input type="text" class="input" name="cvc" maxlength="4" placeholder="0000">
+                        </div>
+                    </div>
+                </div>                    
+            </div>
+
+            <div class="form">
+                <input type="radio" class="radio" name="p_methods">
+                <h3>My Monthly Donation Credits</h3>
+                
+                <hr />
+                <hr />
+                <hr />
+            </div>
+
+            <div class="form">
+                <input type="radio" class="radio" name="p_methods">
+                <h3>PayPal</h3>
+                <hr />
+                <hr />
+                <hr />
+            </div>
+
+            <div id="cart">
+                <div>
+                    <h3>My Cart List</h3>
+                </div>
+                <div>
+
+                    <img src="images/icons/mask.png" alt="Mask Icon">
+                    <p>Covid19 Emergency Support</p>                            
+
+
+                    <img src="images/icons/food.png" alt="Food Icon">
+                    <p>World Hunger Support</p>                            
+
+                </div>
+                <div>
+                    <h3>Details:</h3>
+                    <ul>
+                        <li>Covid19 Emergency Support X 2</li>
+                        <li>World Hunger Support X 3</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Total Amount:</h3>
+                    <p>00 AUD</p>
+                </div>
+                <div>
+                    <a href="checkout.html" class="button">
+                        <div>
+                            <p>Proceed</p>
+                        </div>                            
+                    </a>                        
+                </div>
+            </div>
+        </section>
+
+        <!--Image Section-->
+
+        <footer>
+            <div class="inner_footer">
+                <img src="images/registered.svg" alt="Authentication">                  
+                <div class="footer_box">
+                    <h2>News and Media</h2>
+                    <a href="#">Blog</a>
+                    <a href="#">Media Releases</a>
+                    <a href="#">Media Contacts</a>
+                </div>
+                <div class="footer_box">
+                    <h2>Need Help?</h2>
+                    <a href="#">Terms &amp; Conditions</a>
+                    <a href="#">Privacy Policy</a>
+                </div>
+                <div class="footer_box">
+                    <h2>Follow Us</h2>
+                    <li><a href="https://www.facebook.com/CAREAustralia"><i class="fab fa-facebook-square fa-2x"></i></a></li>
+                    <li><a href="https://www.instagram.com/careaustralia/?hl=en"><i class="fab fa-instagram fa-2x"></i></a></li>
+                    <li><a href="https://twitter.com/careaustralia?lang=en"><i class="fab fa-twitter fa-2x"></i></a></li>
+                </div>
+            </div>
+        </footer>
+    </main>
+  </body>
+</html>
