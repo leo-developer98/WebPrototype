@@ -23,7 +23,7 @@ a {
   .slider {
     display: none;
   }
-  
+
   footer {
     display: none;
   }
@@ -32,6 +32,37 @@ a {
     margin: 2.5% 0 2.5% 2.5%;
   }
 
+  .nav {
+    grid-template-columns: 10% repeat(4, 1fr);
+  }
+
+  .logo-container img {
+    width: 50%;
+  }
+
+  #cards {
+    display: grid;
+    height: 100%;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3,1fr);
+    margin: 2.5%;
+    background-color: none;
+  }
+  #donation .cart {
+    display: none;
+  }
+  .d_content {
+    display: flex;
+    width: 100%;
+  }
+
+  #user_box {
+    display: none;
+  }
+
+  #mypage p {
+    font-size: 0.75em;
+  }
 }
 
 quote {
