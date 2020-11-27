@@ -223,20 +223,29 @@ quote {
 
 #cards {
     display: grid;
-    height: 600px;
+    height: 100%;
     grid-template-columns: repeat(3,1fr);
     grid-template-rows: 1fr;
     margin: 5% 5%;
     background-color: none;
-
 }
 
 #cards > div {
-    margin: 0 10px 0;
-    border: 5px solid #FFBB00;
-    border-radius: 5px;
-    background-color: #fffade;
+  height:100%;
+  width:100%;
+  margin-bottom: 20%;
+}
 
+.main_des {
+  display: block;
+  justify-content: center;
+  align-content: center;
+  margin: 0 2.5%;
+}
+
+.main_des ul li {
+  list-style:disc;
+  margin: 5px;
 }
 
 #cards div img {
@@ -611,10 +620,6 @@ quote {
     width: 50%;
 }
 
-.user_data div {
-
-}
-
 .notification {
     display:grid;
     grid-template-columns: 1fr;
@@ -730,7 +735,9 @@ footer {
 }
 
 
-
+#learnmore {
+  margin: 10%;
+}
 
 .button {
     display: flex;
