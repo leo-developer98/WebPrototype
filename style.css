@@ -313,7 +313,7 @@ h3 {
     margin: 20px;
 }
 
-#cart {
+.cart {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 10% 40% 22% 14% 14%;
@@ -325,16 +325,16 @@ h3 {
 }
 
 
-#cart > :first-child {
+.cart > :first-child {
     display: block;
     border-bottom: 5px solid #3E4749 ;
 }
 
-#cart > :first-child h3{
+.cart > :first-child h3{
     text-align: center;
 }
 
-#cart > :nth-child(2) {
+.cart > :nth-child(2) {
     display: grid;
     grid-template-columns: 30% 70%;
     grid-template-rows: repeat(2,1fr);
@@ -342,40 +342,40 @@ h3 {
     border-bottom: 5px solid #3E4749;
 }
 
-#cart > :nth-child(2) img {
-    object-fit: contain;
-    width: 100%;
+.cart > :nth-child(2) img {
+    object-fit: cover;
+    height: 30%;
     margin: 10px;
 }
 
-#cart > :nth-child(2) p {
+.cart > :nth-child(2) p {
     width: 100%;
     text-align: center;
     float: center;
     margin: 10px;
 }
 
-#cart > :nth-child(3) {
+.cart > :nth-child(3) {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 30% 70%;
     border-bottom: 5px solid #3E4749;
 }
 
-#cart > :nth-child(3) h3 {
+.cart > :nth-child(3) h3 {
     margin: 0 10%;
 }
 
-#cart > :nth-child(4) {
+.cart > :nth-child(4) {
     margin: 0 10%;
 }
 
-#cart > :nth-child(4) p {
+.cart > :nth-child(4) p {
     font-size: 1.5em;
     text-align: center;
 }
 
-#cart > :last-child {
+.cart > :last-child {
     float: center;
     margin: 5% 10%;
 }

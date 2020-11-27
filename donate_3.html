@@ -28,7 +28,7 @@
                 <a href="https://www.facebook.com/CAREAustralia"><i class="fab fa-facebook-square fa-1x"></i></a>
                 <a href="https://www.instagram.com/careaustralia/?hl=en"><i class="fab fa-instagram fa-1x"></i></a>
                 <a href="https://twitter.com/careaustralia?lang=en"><i class="fab fa-twitter fa-1x"></i></a>
-            </div> 
+            </div>      
             <a id="contents" class="active" href="donate.html">Donate</a>
             <a id="contents" href="getinvolved.html">Get Involved</a>
             <a id="contents" href="aboutus.html">About Us</a>
@@ -39,94 +39,73 @@
             </div>
         </nav>
 
-        <section id="checkout">
+        <section id="donation" class="page">
+            <div id="heading">Donate Now</div>
             <div id="donation-bar">
                 <ul>
-                    <li>Choose Project</li>
+                    <li class="active">Choose Project</li>
                     <li>Set Amount</li>
-                    <li class="active">Checkout</li>
+                    <li>Checkout</li>
                 </ul>                
             </div>
+            <div>
 
-            <div class="checkout-left">
-              <div class="form">
-                  <input type="radio" class="radio" name="p_methods">
-                  <div>
-                      <h3>Credit/Debit Card Payment</h3>
-                      <div class="card">
-                          <label class="label">Card Number:</label>
-                          <br />
-                          <input type="text" class="input" name="card_number" maxlength="16" placeholder="0000 0000 0000 0000">
-                      </div>
-                      <div class="card">
-                          <label class="label">Card holder:</label>
-                          <br />
-                          <input type="text" class="input" name="card_holder" placeholder="Care Australia">
-                      </div>
-                      <div class="card">
-                          <div class="card_item">
-                              <label class="label">Expiry Date:</label>
-                              <br />
-                              <input type="text" class="input" name="expiry_date" maxlength="4" placeholder="MM / YY">
-                          </div>
-                          <div class="card_item">
-                              <label class="label">CVC:</label>
-                              <br />
-                              <input type="text" class="input" name="cvc" maxlength="4" placeholder="0000">
-                          </div>
-                      </div>
-                  </div>                    
-              </div>
-
-              <div class="form">
-                  <input type="radio" class="radio" name="p_methods">
-                  <h3>My Monthly Donation Credits</h3>
-                  
-                  <hr />
-                  <hr />
-                  <hr />
-              </div>
-
-              <div class="form">
-                  <input type="radio" class="radio" name="p_methods">
-                  <h3>PayPal</h3>
-                  <hr />
-                  <hr />
-                  <hr />
-              </div>
             </div>
-
-            <div id="cart">
-                <div>
-                    <h3>My Cart List</h3>    
-                </div>
-                <div>
-
-                    <img src="images/icons/mask.png" alt="Mask Icon">
-                    <p>Covid19 Emergency Support</p>                            
-
-
-                    <img src="images/icons/food.png" alt="Food Icon">
-                    <p>World Hunger Support</p>                            
-
-                </div>
-                <div>
-                    <h3>Details:</h3>
-                    <ul>
-                        <li>Covid19 Emergency Support X 2</li>
-                        <li>World Hunger Support X 3</li>
-                    </ul>
-                </div>
-                <div>
-                    <h3>Total Amount:</h3>
-                    <p>00 AUD</p>
-                </div>
-                <div>
-                    <a href="checkout.html" class="button">
+            <div id="shop">
+                <div id="projects">
+                    <div class="p_icons">
+                        <a href="donate.html"><img src="images/icons/emergency.png" alt="icon"></a>
+                        <a href="donate_2.html"><img src="images/icons/mask.png" alt="icon"></a>
+                        <a href="donate_3.html"><img src="images/icons/food.png" alt="icon"></a>
+                        <a href="donate_4.html"><img src="images/icons/female.png" alt="icon"></a>
+                    </div>
+                    <div class="point" id="p3">
+                    </div>
+                    <div class="d_content" id="d3">
+                        <img src="images/hunger.jpg" alt="Charity Work Image">
                         <div>
-                            <p>Proceed</p>
-                        </div>                            
-                    </a>                        
+                            <h2>Overcoming hunger still remains one of the biggest challenges.</h2>
+                            <p>Not having enough food keeps people from experiencing a healthy, productive life. Millions of children under five die each year because of malnutrition. Inefficient farming practices and a changing climate mean food supplies are irregular. Poor communities often lack the variety of nutrients they need for healthy development.</p>
+                            <p>Women face many inequalities that make them particularly vulnerable to hunger. When food is scarce, they often eat less to give the rest of the family more food, even when they are pregnant and breastfeeding.</p>
+                            <p><a href="#emergencies">Learn More</a></p>
+                            <div id="add_cart">
+                                <a href="checkout.html" class="button">
+                                    <p>Add to Cart</p>                         
+                                </a> 
+                            </div>                       
+                        </div>
+                    </div>
+                </div>
+                <div class="cart">
+                    <div>
+                        <h3>My Cart List</h3>
+                    </div>
+                    <div>
+                        <img src="images/icons/mask.png" alt="Mask Icon">
+                        <p>Covid19 Emergency Support</p>                            
+
+                        <img src="images/icons/food.png" alt="Food Icon">
+                        <p>World Hunger Support</p>                            
+
+                    </div>
+                    <div>
+                        <h3>Details:</h3>
+                        <ul>
+                            <li>Covid19 Emergency Support X 2</li>
+                            <li>World Hunger Support X 3</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3>Total Amount:</h3>
+                        <p>00 AUD</p>
+                    </div>
+                    <div>
+                        <a href="checkout.html" class="button">
+                            <div>
+                                <p>Proceed</p>
+                            </div>                            
+                        </a>                        
+                    </div>
                 </div>
             </div>
         </section>
