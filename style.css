@@ -12,10 +12,22 @@ body {
 
 h3 {
     font-weight: normal;
+    text-align: center;
 }
 
 a {
     color: #FFBB00;
+}
+
+quote {
+  display: block;
+  margin: 5% 0;
+  padding: 5%;
+  border-left: 3px solid #ffbb00;
+  border-right: 3px solid #ffbb00;
+  background-color: #fffade;
+  font-family: 'Inria Serif', serif;
+  color: #F97B1A;
 }
 
 /* Navigation
@@ -219,11 +231,11 @@ a {
 
 }
 
-#cards div {
+#cards > div {
     margin: 0 10px 0;
-    border: 10px solid #FFBB00;
-    border-radius: 1%;
-    background-color: #FFBB00;
+    border: 5px solid #FFBB00;
+    border-radius: 5px;
+    background-color: #fffade;
 
 }
 
@@ -664,21 +676,27 @@ a {
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 footer {
     width: 100%;
-    height: 100%;
+    height: 150px;
     background-color: #3e4749;
 }
 
 .inner_footer {
     display: grid;
-    height:100%;
-    margin: 5% 0;
-    grid-template-columns: repeat(4, 1fr);
+    margin: 5%;
+    grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr;
+    width:100%;
+    height:100%;
+    justify-content: center;
+    align-content: centrer;
 }
 
 .inner_footer .footer_box {
+    display:block;
+    width: 100%;
     height: 100%;
-    float:center;
+    justify-content:center;
+    align-content: center;
 }
 
 .inner_footer .footer_box h2 {
@@ -687,7 +705,6 @@ footer {
     color: white;
     display: block;
     width:100%;
-    margin-bottom: 15px;
 }
 
 .inner_footer .footer_box a {
