@@ -3,11 +3,17 @@
 html {
 	scroll-behavior: smooth;
 	font-size: 100%;
+  height: 100%;
   font-family: 'Alata', sans-serif;
 }
 
 body {
   margin: 0;
+  height: 100%;
+}
+
+main {
+  height: 100%;
 }
 
 h3 {
@@ -19,60 +25,6 @@ a {
     color: #FFBB00;
 }
 
-@media only screen and (max-width: 375px) {
-  .slider {
-    display: none;
-  }
-
-  footer {
-    display: none;
-  }
-
-  .page {
-    margin: 2.5% 0 2.5% 2.5%;
-  }
-
-  .nav {
-    grid-template-columns: 10% repeat(4, 1fr);
-  }
-
-  .logo-container img {
-    width: 50%;
-  }
-
-  #cards {
-    display: grid;
-    height: 100%;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(3,1fr);
-    margin: 2.5%;
-    background-color: none;
-  }
-  #donation .cart {
-    display: none;
-  }
-  .d_content {
-    display: flex;
-    width: 100%;
-  }
-
-  #user_box {
-    display: none;
-  }
-
-  #mypage p {
-    font-size: 0.75em;
-  }
-
-  #checkout_all {
-    display: block;
-  }
-  #checkout_cart {
-    display: none;
-  }
-}
-
-
 quote {
   display: block;
   margin: 5% 0;
@@ -81,8 +33,50 @@ quote {
   border-right: 3px solid #ffbb00;
   background-color: #fffade;
   font-family: 'Inria Serif', serif;
+  font-size: 2em;
   color: #F97B1A;
 }
+
+#heading {
+    text-align: center;
+    font-weight: normal;
+    font-size: 3em;
+}
+
+.page {
+    margin: 5% 0 5% 5%;
+}
+
+#learnmore {
+  width: 80%;
+  margin: 10%;
+  bottom: 0px;
+}
+
+#hunger #learnmore {
+  margin-top: 11%;
+}
+
+#edu #learnmore {
+  margin-top: 5%;
+}
+
+.button {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(#FFBB00,#ff9354);
+    border: 20px solid linear-gradient(#FFBB00,#ff9354);
+    border-radius: 10px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 100%;
+    color: white;
+    margin: auto;
+    align-items:center;
+    justify-content:center;
+}
+
 
 /* Navigation
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -90,6 +84,7 @@ quote {
     position: sticky;
     top: 0;
     left: 0;
+    z-index: 10000;
     height: relative;
     width: 100%;
     display: grid;
@@ -108,7 +103,6 @@ quote {
     color: white;
     font-size: 15px;
 }
-
 
 #contents:hover {
   background-color: #F97B1A;
@@ -144,6 +138,7 @@ quote {
 .nav .logo-container img {
     position: relative;
     width: auto;
+    max-width: 80px;
     max-height: 80px;
     padding: 7px 30px 15px;
     border-radius: 50%;
@@ -169,7 +164,6 @@ quote {
 .active {
     color: #F97B1A;
 }
-
 
 .search_bar {
     display: flex;
@@ -206,22 +200,13 @@ quote {
     width:0;
 }
 
-
-
-
-#heading {
-    text-align: center;
-    font-weight: normal;
-    font-size: 3em;
+#mobile_nav {
+  display: none;
 }
 
-.page {
-    margin: 5% 0 5% 5%;
-}
 
 /* Landing
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-
 .slider {
     object-fit: cover;
     height: 700px;
@@ -239,6 +224,7 @@ quote {
     width: 20%;
     float: left;
 }
+
 @keyframes slider {
     0% {
         left: 0%;
@@ -269,7 +255,6 @@ quote {
     }
 }
 
-
 #description {
     margin: 5% 15% 5%;
     text-align: center;
@@ -277,24 +262,29 @@ quote {
 
 #cards {
     display: grid;
-    height: 100%;
+    height: auto;
     grid-template-columns: repeat(3,1fr);
     grid-template-rows: 1fr;
     margin: 5% 5%;
     background-color: none;
 }
 
-#cards > div {
-  height:100%;
-  width:100%;
-  margin-bottom: 20%;
+.landing_card {
+  display: block;
+  overflow: auto;
+}
+
+.landing_card img {
+  width: 100%;
+  object-fit: cover;
 }
 
 .main_des {
   display: block;
+  position: relative;
+  margin: 0 2.5%;
   justify-content: center;
   align-content: center;
-  margin: 0 2.5%;
 }
 
 .main_des ul li {
@@ -302,10 +292,11 @@ quote {
   margin: 5px;
 }
 
-#cards div img {
-    width:100%;    
-    height: 70%;
-    object-fit: cover;
+#last_btns {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 5%;
 }
 
 
@@ -328,9 +319,9 @@ quote {
     text-align: center;
 }
 
+
 /* Donation 
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-
 #shop {
     display: grid;
     grid-template-columns: 75% 25%;
@@ -432,6 +423,9 @@ quote {
     margin: 2.5% 5%;
 }
 
+.d_content #mobile_proceed {
+  display: none;
+}
 
 #add_cart {
     margin: 5%;
@@ -449,7 +443,6 @@ quote {
     border-radius: 10px 0 0 10px;
     border: 5px solid gray;
 }
-
 
 .cart > :first-child {
     display: block;
@@ -505,9 +498,9 @@ quote {
     margin: 5% 10%;
 }
 
+
 /* Check Out
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-
 #checkout {
     margin: 5%;
     margin-right: 0%;
@@ -597,7 +590,6 @@ quote {
 
 /* My Page
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-
 #mypage {
     display: grid;
     grid-template-columns: repeat(2,1fr);
@@ -731,23 +723,26 @@ quote {
     background-color: #3e4749;
     margin: 0 10px;
 }
+
+
 /* Footer
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 footer {
-    width: 100%;
-    height: 150px;
-    background-color: #3e4749;
+  width: 100%;
+  height: 150px;
+  position: relative;
+  bottom: 0;
+  background-color: #3e4749;
 }
 
 .inner_footer {
     display: grid;
-    margin: 5%;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 1fr;
-    width:100%;
     height:100%;
     justify-content: center;
     align-content: centrer;
+    margin: 5%;
 }
 
 .inner_footer .footer_box {
@@ -768,6 +763,7 @@ footer {
 
 .inner_footer .footer_box a {
     display: block;
+    float: center;
     color: darkgray;
     text-decoration: none;
 }
@@ -778,9 +774,13 @@ footer {
     font-size: 20px;
 }
 
-.inner_footer img {
-    display: inline-block;
+.footer_box img {
     width: 100px;
+    margin-top: 10%;
+}
+
+.footer_box {
+  overflow: hidden;
 }
 
 .footer_box a:hover {
@@ -788,23 +788,217 @@ footer {
     color: white;
 }
 
-
-#learnmore {
-  margin: 10%;
+.footer_box a i:hover {
+  transform: scale(1.5);
 }
 
-.button {
-    display: flex;
+.nav {
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 10000;
+    height: relative;
     width: 100%;
-    height: 100%;
-    background-image: linear-gradient(#FFBB00,#ff9354);
-    border: 20px solid linear-gradient(#FFBB00,#ff9354);
-    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 30% repeat(4,1fr);
+    grid-template-rows: 6em;
+    overflow: hidden;
+    background-color: #FFBB00;
+}
+
+#hidden {
+  display: none;
+}
+
+
+/* Media Query - Mobile
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+@media only screen and (max-width: 480px) {
+  .slider {
+    height: 300px;
+  }
+
+  #mobile_nav {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    width: 100%;
+    height: auto;
+    background-color: #FFBB00;
+    align-content: center;
+    justify-content: center;
+  }
+
+  #mobile_nav > div {
+    margin: 8%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+  }
+
+  .drop_menu {
+    display: block;
+    list-style: none;
     text-align: center;
+  }
+  
+  .drop_menu a {
     text-decoration: none;
-    font-size: 100%;
+    margin: 5px;
+  }
+
+  .drop_menu a:active {
+    color:#F97B1A;
+  }
+
+  .drop_menu:active {
+    display: block;
+  }
+
+  #m_btn {
+    background-color: #FFBB00;
+    border: none;
     color: white;
-    margin: auto;
-    align-items:center;
-    justify-content:center;
+    padding: 16px 20px;
+    font-size: 16px;
+  }
+
+  .m_menu:active ul {
+    display: block;
+  }
+
+  .m_menu:focus {
+    background-color: #ffa600;
+    outline: none;
+    
+  }
+
+  #mypage {
+    margin:0;
+    padding: 8px;
+  }
+
+
+  #mobile_nav .logo-container img {
+    max-width: 55px;
+    max-height: 55px;
+  }
+
+  #mobile_nav a {
+    color: white;
+    display: block;
+  }
+
+  footer {
+    display: none;
+  }
+
+  .page {
+    margin: 5% 2.5%;
+    position: relative;
+  }
+
+  #heading {
+    font-size: 2em;
+  }
+
+  .nav {
+    display: none;
+  }
+
+  #description h2 {
+    font-size: 1.25em;
+  }
+
+  #cards {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+  }
+
+  #cards img {
+    display: block;
+    object-fit: contain;
+  }
+
+  quote {
+    font-size: 1em;
+  }
+
+  .inner_footer {
+    display:none;
+  }
+
+  #donation-bar {
+    margin:0;
+  }
+
+  #shop {
+    display: block;
+  }
+
+  #projects {
+    height: 100%;
+  }
+
+  .d_content {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 40% 60%;
+  }
+
+  .d_content p:nth-of-type(2) {
+    display: none;
+  }
+
+  .d_content > div {
+    height: 100%;
+  }
+
+  #shop .cart {
+    display: none;
+  }
+
+  #mobile_proceed {
+    display: flex;
+    margin: 5%;
+    float:bottom;
+  }
+
+  #checkout {
+    margin: 5%;
+  }
+
+  #checkout_all {
+    display: block;
+  }
+
+  .form {
+    display: block;
+    float: center;
+    margin-right: 0;
+  }
+
+  #checkout .cart {
+    float: none;
+    border-radius:0;
+    margin: 5% 0;
+  }
+
+  #checkout_done h2 {
+    font-size: 1em;
+  }
+
+  #mypage {
+    display: block;
+  }
+  .user_details {
+    display: block;
+    border: none;
+    float: center;
+  }
+
+  .notification {
+    margin: 5% 0;
+  }
 }

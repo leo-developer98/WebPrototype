@@ -2,8 +2,11 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <meta name="description" content="Care Australia is a non-profit NGO charity organisation that supports the suffering global communities.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Care Australia</title>
+    <meta name="keywords" content="non profit, charity, women, care, donation">
+    <meta name="author" content="Leo Park">
+    <title>Home | Care Australia</title>
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="style.css"  type="text/css" />
     <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
@@ -52,58 +55,62 @@
             <br />
             <h4>We put women and girls at the heart of our work. Their access to equal opportunities represents a powerful and effective opportunity to end extreme poverty. When one woman escapes poverty, she will bring four others with her.</h4>
             <br />
-            <p>Quick Travel to our main field of Projects:</p>
         </section>
         <section id="cards">
-            <div>
-                <img src="images/females.jpg" alt="Charity Work Image" class="slider">
-                <div class="main_des">
-                  <h3>Empowering Women</h3>
-                  <ul>
-                    <li>60% of the world’s working poor are women</li>
-                    <li>90% of countries have at least one law that discriminates against women</li>
-                  </ul>
-                  <div id="learnmore">
-                    <a href="#" class="button">
-                      <p>Learn More</p>
-                    </a>   
-                  </div>  
-                </div>
-            </div>
-            <div>
-                <img src="images/hunger.jpg" alt="Charity Work Image" class="slider">
-                <div class="main_des">
-                  <h3>Hunger and Health</h3>
-                  <ul>
-                    <li>Around 795 million people do not have enough to eat to lead healthy active lives – that’s about 1 in 9 people</li>
-                    <li>2.6 million babies die every year in their first month of life and a similar number are stillborn</li>
-                  </ul>
-                  <div id="learnmore">
-                    <a href="#" class="button">
-                      <p>Learn More</p>
-                    </a>   
-                  </div>  
-                </div>
-            </div>
-            <div>
-                <img src="images/education.jpg" alt="Charity Work Image" class="slider">
-                <div class="main_des">
-                  <h3>Education</h3>
-                  <ul>
-                    <li>There are 59.3 million primary school-aged children out-of-school – more than half of them are girls</li>
-                    <li>Over the past four decades, the global increase in women’s education has prevented more than 4 million child deaths</li>
-                  </ul>
-                  <div id="learnmore">
-                    <a href="#" class="button">
-                      <p>Learn More</p>
-                    </a>   
-                  </div>                     
-                </div>
-            </div>
+          <div class="landing_card">
+              <img src="images/females.jpg" alt="Charity Work Image">
+              <div class="main_des" id="women">
+                <h3>Empowering Women</h3>
+                <ul>
+                  <li>60% of the world’s working poor are women</li>
+                  <li>90% of countries have at least one law that discriminates against women</li>
+                  <li>1 in 5 women will be a victim of rape or attempted rape in her lifetime</li>
+                </ul>
+                <div id="learnmore">
+                  <a href="#" class="button">
+                    <p>Learn More</p>
+                  </a>   
+                </div>  
+              </div>
+          </div>
+          <div class="landing_card">
+              <img src="images/hunger.jpg" alt="Charity Work Image">
+              <div class="main_des" id="hunger">
+                <h3>Hunger and Health</h3>
+                <ul>
+                  <li>Around 795 million people do not have enough to eat to lead healthy active lives – that’s about 1 in 9 people</li>
+                  <li>2.6 million babies die every year in their first month of life and a similar number are stillborn</li>
+                </ul>
+                <div id="learnmore">
+                  <a href="#" class="button">
+                    <p>Learn More</p>
+                  </a>   
+                </div>  
+              </div>
+          </div>
+          <div class="landing_card">
+              <img src="images/education.jpg" alt="Charity Work Image">
+              <div class="main_des" id="edu">
+                <h3>Education</h3>
+                <ul>
+                  <li>There are 59.3 million primary school-aged children out-of-school – more than half of them are girls</li>
+                  <li>Over the past four decades, the global increase in women’s education has prevented more than 4 million child deaths</li>
+                </ul> 
+                <div id="learnmore">
+                  <a href="#" class="button">
+                    <p>Learn More</p>
+                  </a>   
+                </div>                  
+              </div>  
+          </div>
         </section>
 
+        <!-- Footer -->
         <footer>
-            <div class="inner_footer">                
+            <div class="inner_footer">   
+                <div class="footer_box">
+                  <img src="images/registered.svg" alt="Authentication">
+                </div>             
                 <div class="footer_box">
                     <h2>News and Media</h2>
                     <a href="#">Blog</a>
@@ -117,12 +124,35 @@
                 </div>
                 <div class="footer_box">
                     <h2>Follow Us</h2>
-                    <li><a href="https://www.facebook.com/CAREAustralia"><i class="fab fa-facebook-square fa-2x"></i></a></li>
-                    <li><a href="https://www.instagram.com/careaustralia/?hl=en"><i class="fab fa-instagram fa-2x"></i></a></li>
-                    <li><a href="https://twitter.com/careaustralia?lang=en"><i class="fab fa-twitter fa-2x"></i></a></li>
+                    <li><a href="https://www.facebook.com/CAREAustralia"><i class="fab fa-facebook-square fa-1x"></i></a></li>
+                    <li><a href="https://www.instagram.com/careaustralia/?hl=en"><i class="fab fa-instagram fa-1x"></i></a></li>
+                    <li><a href="https://twitter.com/careaustralia?lang=en"><i class="fab fa-twitter fa-1x"></i></a></li>
                 </div>
             </div>
         </footer>
+        <div>
+          <ul class="drop_menu" id="hidden">
+            <li><a href="donate.html">Donate</a></li>
+            <li><a href="getinvolved.html">Get Involved</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="#"><i class="fas fa-search"></i></a></li>
+          </ul>
+        </div>
+        <nav id="mobile_nav">
+          <div class="logo-container">
+              <a class="logo" href="index.html">
+                  <img src="images/logo.png" alt="logo">
+              </a> 
+          </div>    
+          <div>
+            <button class="drop_menu" id="m_btn">
+                <i class="fas fa-bars fa-2x"></i>
+            </button>
+          </div>
+          <div>
+              <a id="mypage" href="mypage.html"><i class="fas fa-user fa-2x"></i></a>
+          </div>
+        </nav>
     </main>
   </body>
 </html>
