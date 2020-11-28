@@ -736,6 +736,7 @@ quote {
   padding: 3%;
   border-top: 3px solid #ffa600;
   border-bottom: 3px solid #ffa600;
+  margin: auto 0;
 }
 
 #des_heading {
@@ -1003,6 +1004,10 @@ footer {
     float: none;
     border-radius:0;
     margin: 5% 0;
+  }
+
+  #checkout_done {
+    height: 100%;
   }
 
   #checkout_done h2 {
