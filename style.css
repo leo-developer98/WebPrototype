@@ -27,7 +27,7 @@ a {
 
 quote {
   display: block;
-  margin: 5% 0;
+  margin: 5%;
   padding: 5%;
   border-left: 3px solid #ffbb00;
   border-right: 3px solid #ffbb00;
@@ -723,6 +723,26 @@ quote {
     background-color: #3e4749;
     margin: 0 10px;
 }
+
+/* About Us
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+#aboutus #cards {
+  display: block;
+}
+
+#aboutus #cards ul {
+  display: block;
+  background:#fffade;
+  padding: 3%;
+  border-top: 3px solid #ffa600;
+  border-bottom: 3px solid #ffa600;
+}
+
+#des_heading {
+  font-size: 2.5em;
+  color: #F97B1A;
+}
+
 
 
 /* Footer
